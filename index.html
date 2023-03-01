@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="style.css">
+    <div>
+      <h1>
+        Calculadora
+    </h1>
+    </div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <input type="text" id="resultado" class="result" readonly>
+        </div>
+
+        <div class="keypad">
+          <button class="key clear" onclick="clearResult()">C</button>
+          <button class="key" onclick="addToResult('(')"> ( </button>
+          <button class="key" onclick="addToResult(')')"> ) </button>
+          <button class="key" onclick="addToResult('/')"> / </button>
+
+          <button class="key" onclick="addToResult('7')">7</button>
+          <button class="key" onclick="addToResult('8')">8</button>
+          <button class="key" onclick="addToResult('9')">9</button>
+          <button class="key" onclick="addToResult('*')"> x </button>
+
+          <button class="key" onclick="addToResult('4')">4</button>
+          <button class="key" onclick="addToResult('5')">5</button>
+          <button class="key" onclick="addToResult('6')">6</button>
+          <button class="key" onclick="addToResult('-')"> - </button>
+
+          <button class="key" onclick="addToResult('1')">1</button>
+          <button class="key" onclick="addToResult('2')">2</button>
+          <button class="key" onclick="addToResult('3')">3</button>
+          <button class="key" onclick="addToResult('+')"> + </button>
+
+          <button class="key zero" onclick="addToResult('0')">0</button>
+          <button class="key" onclick="addToResult('.')">.</button>
+          <button class="key equal" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+  </body>
+</html>
